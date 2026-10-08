@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Lumière Studio — Beauty, Grooming &amp; Wellness Demo</title>
+  <meta name="description" content="Explore hair, skin, grooming, bridal, makeup, spa and nail services for women and men. Demo pricing shown for portfolio purposes.">
+  <meta name="theme-color" content="#faf6f0">
+  <meta name="robots" content="index, follow">
+  <!-- canonical: set baseUrl in _src/data/site.json -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lumière Studio (Demo)">
+  <meta property="og:title" content="Services | Lumière Studio — Beauty, Grooming &amp; Wellness Demo">
+  <meta property="og:description" content="Explore hair, skin, grooming, bridal, makeup, spa and nail services for women and men. Demo pricing shown for portfolio purposes.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_IN">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body data-page="services">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.6 4.9L18.5 9.5l-4.9 1.6L12 16l-1.6-4.9L5.5 9.5l4.9-1.6z"/><path d="M19 15l.7 2.1 2.1.7-2.1.7L19 20.6l-.7-2.1-2.1-.7 2.1-.7z"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.6-3 8.5-7 10-4-1.5-7-5.4-7-10V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19c3-4 6-7 10-9"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 20l1.4-4A8 8 0 1 1 8.5 19z"/><path d="M9 10.5c.5 1.6 1.9 3 3.5 3.5l1.2-1 1.8.8"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <aside class="demo-bar" aria-label="Demo project notice">
+    <p class="container demo-bar__inner"><span class="demo-bar__tag">Demo Project</span> Lumière Studio is a fictional brand created for portfolio purposes. <a href="legal.html">Learn more</a></p>
+  </aside>
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="Lumière Studio — home">
+        <span class="logo__mark" aria-hidden="true">L</span>
+        <span class="logo__text">
+          <span class="logo__name">Lumière Studio</span>
+          <span class="logo__sub">Beauty, Grooming &amp; Wellness</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-menu" aria-label="Main" data-menu>
+        <ul class="nav__list" role="list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="services.html" aria-current="page">Services</a></li>
+          <li><a class="nav__link" href="pricing.html">Pricing</a></li>
+          <li><a class="nav__link" href="team.html">Team</a></li>
+          <li><a class="nav__link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav__link" href="appointment.html">Appointment</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta-mobile" href="appointment.html">Book an Appointment</a>
+      </nav>
+
+      <a class="btn btn--primary site-header__cta" href="appointment.html">Book an Appointment</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu" data-menu-toggle>
+        <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <header class="page-hero">
+      <div class="container page-hero__inner">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Services</li></ol>
+        <p class="eyebrow">Services</p>
+        <h1>Our Services</h1>
+        <p class="lead">Explore premium beauty, grooming and wellness services designed for everyone.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="services-list-title">
+      <div class="container" data-filterable data-filter-noun="services">
+        <h2 class="visually-hidden" id="services-list-title">Service list</h2>
+
+        <div class="filters">
+          <div class="filters__group" role="group" aria-labelledby="filter-category-label">
+            <p class="filters__label" id="filter-category-label">Category</p>
+            <div class="filters__chips">
+        <button type="button" class="chip" data-filter-category="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-filter-category="hair" aria-pressed="false">Hair</button>
+        <button type="button" class="chip" data-filter-category="skin" aria-pressed="false">Skin</button>
+        <button type="button" class="chip" data-filter-category="grooming" aria-pressed="false">Grooming</button>
+        <button type="button" class="chip" data-filter-category="bridal" aria-pressed="false">Bridal</button>
+        <button type="button" class="chip" data-filter-category="makeup" aria-pressed="false">Makeup</button>
+        <button type="button" class="chip" data-filter-category="spa" aria-pressed="false">Spa</button>
+        <button type="button" class="chip" data-filter-category="nails" aria-pressed="false">Nails</button>
+            </div>
+          </div>
+          <div class="filters__group" role="group" aria-labelledby="filter-audience-label">
+            <p class="filters__label" id="filter-audience-label">Customer type</p>
+            <div class="segmented">
+        <button type="button" class="chip" data-filter-audience="all" aria-pressed="true">Everyone</button>
+        <button type="button" class="chip" data-filter-audience="women" aria-pressed="false">Women</button>
+        <button type="button" class="chip" data-filter-audience="men" aria-pressed="false">Men</button>
+        <button type="button" class="chip" data-filter-audience="unisex" aria-pressed="false">Unisex</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="filters__bar">
+          <p class="filters__count" data-filter-count aria-live="polite">Showing 18 services</p>
+          <p class="filters__count">Women &amp; Men views include unisex services.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="service-card" data-category="hair" data-audience="women" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/hair-styling.jpg" width="800" height="600" alt="A stylist blow-dries and brushes a woman&#x27;s shoulder-length hair" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--women">Women</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Hair</p>
+    <h3 class="service-card__title">Hair Styling</h3>
+    <p class="service-card__desc">Cut, blow-dry and finish shaped to your face, texture and everyday routine.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹800</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>45 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=hair-styling">Book Now<span class="visually-hidden">: Hair Styling (Women)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="hair" data-audience="women" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/hair-spa-women.jpg" width="800" height="600" alt="A client relaxes at a basin while her hair is rinsed" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--women">Women</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Hair</p>
+    <h3 class="service-card__title">Hair Spa</h3>
+    <p class="service-card__desc">A nourishing cleanse, mask and scalp massage for soft, healthy-feeling hair.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹1,200</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>60 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=hair-spa-women">Book Now<span class="visually-hidden">: Hair Spa (Women)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="skin" data-audience="women" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/signature-facial.jpg" width="800" height="600" alt="A face mask is applied with a brush to a relaxed client" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--women">Women</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Skin</p>
+    <h3 class="service-card__title">Signature Facial</h3>
+    <p class="service-card__desc">A calming multi-step facial with cleansing, exfoliation, mask and massage.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹1,800</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>75 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=signature-facial">Book Now<span class="visually-hidden">: Signature Facial (Women)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="bridal" data-audience="women" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/bridal-makeup.jpg" width="800" height="600" alt="A bride in a red and gold saree with traditional jewellery and bridal makeup" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--women">Women</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Bridal</p>
+    <h3 class="service-card__title">Bridal Makeup</h3>
+    <p class="service-card__desc">Long-wear bridal makeup planned around your outfit, jewellery and ceremony.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹15,000</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>120 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=bridal-makeup">Book Now<span class="visually-hidden">: Bridal Makeup (Women)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="makeup" data-audience="women" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/occasion-makeup.jpg" width="800" height="600" alt="Close-up of lip colour being applied with a fine brush" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--women">Women</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Makeup</p>
+    <h3 class="service-card__title">Occasion Makeup</h3>
+    <p class="service-card__desc">Polished makeup for receptions, parties and photo shoots — soft or statement.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹3,500</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>60 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=occasion-makeup">Book Now<span class="visually-hidden">: Occasion Makeup (Women)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="nails" data-audience="women" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/manicure-pedicure.jpg" width="800" height="600" alt="Hands with a neat nude manicure resting on a soft white throw" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--women">Women</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Nails</p>
+    <h3 class="service-card__title">Manicure &amp; Pedicure</h3>
+    <p class="service-card__desc">Shaping, cuticle care, a relaxing soak and a clean polish finish.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹1,300</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>90 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=manicure-pedicure">Book Now<span class="visually-hidden">: Manicure &amp; Pedicure (Women)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="spa" data-audience="women" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/spa-ritual.jpg" width="800" height="600" alt="Warm stones placed along a client&#x27;s back during a spa treatment" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--women">Women</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Spa</p>
+    <h3 class="service-card__title">Spa Ritual</h3>
+    <p class="service-card__desc">A slow, restorative body ritual with warm stones and aromatic oils.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹2,500</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>90 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=spa-ritual">Book Now<span class="visually-hidden">: Spa Ritual (Women)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="hair" data-audience="men" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/mens-haircut.jpg" width="800" height="600" alt="A barber shapes a client&#x27;s textured curls with a precise fade" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--men">Men</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Hair</p>
+    <h3 class="service-card__title">Men&#x27;s Haircut</h3>
+    <p class="service-card__desc">Classic and modern haircut styling with a clean, sharp finish.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹400</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>30 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=mens-haircut">Book Now<span class="visually-hidden">: Men&#x27;s Haircut (Men)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="grooming" data-audience="men" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/beard-styling.jpg" width="800" height="600" alt="A beard being combed and shaped in a barber chair" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--men">Men</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Grooming</p>
+    <h3 class="service-card__title">Beard Styling</h3>
+    <p class="service-card__desc">Trim, shape and line-up with a conditioning beard finish.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹300</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>30 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=beard-styling">Book Now<span class="visually-hidden">: Beard Styling (Men)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="spa" data-audience="men" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/head-massage.jpg" width="800" height="600" alt="A man reclines in a grooming chair with his eyes closed during a treatment" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--men">Men</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Spa</p>
+    <h3 class="service-card__title">Head Massage</h3>
+    <p class="service-card__desc">A deeply relaxing scalp, neck and shoulder massage with warm oil.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹500</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>30 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=head-massage">Book Now<span class="visually-hidden">: Head Massage (Men)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="skin" data-audience="men" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/mens-facial.jpg" width="800" height="600" alt="Black-and-white close-up of a lather brush on a man&#x27;s beard and cheek" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--men">Men</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Skin</p>
+    <h3 class="service-card__title">Men&#x27;s Facial</h3>
+    <p class="service-card__desc">Deep cleanse, exfoliation and hydration designed for men&#x27;s skin.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹1,500</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>60 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=mens-facial">Book Now<span class="visually-hidden">: Men&#x27;s Facial (Men)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="hair" data-audience="men" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/hair-spa-men.jpg" width="800" height="600" alt="A groomer mists a man&#x27;s hair with a conditioning spray" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--men">Men</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Hair</p>
+    <h3 class="service-card__title">Hair Spa</h3>
+    <p class="service-card__desc">Scalp cleanse, conditioning treatment and massage for healthy hair.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹1,200</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>45 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=hair-spa-men">Book Now<span class="visually-hidden">: Hair Spa (Men)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="grooming" data-audience="men" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/grooming-package.jpg" width="800" height="600" alt="Clippers, scissors, combs and grooming products laid out on a dark wooden surface" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--men">Men</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Grooming</p>
+    <h3 class="service-card__title">Grooming Package</h3>
+    <p class="service-card__desc">Haircut, beard styling, express facial and head massage in one visit.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹2,200</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>90 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=grooming-package">Book Now<span class="visually-hidden">: Grooming Package (Men)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="hair" data-audience="unisex" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/hair-colour.jpg" width="800" height="600" alt="Long hair with soft, blended honey-blonde colour seen from behind" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--unisex">Unisex</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Hair</p>
+    <h3 class="service-card__title">Hair Colour</h3>
+    <p class="service-card__desc">Global colour, highlights or grey blending with a colour consultation.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹2,000</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>120 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=hair-colour">Book Now<span class="visually-hidden">: Hair Colour (Unisex)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="hair" data-audience="unisex" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/hair-treatment.jpg" width="800" height="600" alt="A stylist washes a client&#x27;s hair at a basin in a bright studio" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--unisex">Unisex</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Hair</p>
+    <h3 class="service-card__title">Hair Treatment</h3>
+    <p class="service-card__desc">Targeted care for frizz, dryness or damage, matched to your hair type.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹2,500</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>90 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=hair-treatment">Book Now<span class="visually-hidden">: Hair Treatment (Unisex)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="skin" data-audience="unisex" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/skin-consultation.jpg" width="800" height="600" alt="A gloved specialist examines a relaxed client&#x27;s skin during a facial" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--unisex">Unisex</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Skin</p>
+    <h3 class="service-card__title">Skin Consultation</h3>
+    <p class="service-card__desc">A one-to-one skin assessment and a simple, personalised care plan.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹500</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>30 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=skin-consultation">Book Now<span class="visually-hidden">: Skin Consultation (Unisex)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="spa" data-audience="unisex" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/relaxation-spa.jpg" width="800" height="600" alt="Massage oil being poured into a therapist&#x27;s hand above a client&#x27;s back" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--unisex">Unisex</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Spa</p>
+    <h3 class="service-card__title">Relaxation Spa</h3>
+    <p class="service-card__desc">A full-body aromatherapy massage to release tension and reset.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹2,800</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>90 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=relaxation-spa">Book Now<span class="visually-hidden">: Relaxation Spa (Unisex)</span></a>
+  </div>
+</article>
+
+<article class="service-card" data-category="skin" data-audience="unisex" data-item>
+  <div class="service-card__media">
+    <img src="assets/img/services/express-facial.jpg" width="800" height="600" alt="A therapist gently cleanses a reclining client&#x27;s face" loading="lazy" decoding="async" sizes="(min-width: 1200px) 380px, (min-width: 700px) 45vw, 92vw">
+    <span class="service-card__audience badge badge--unisex">Unisex</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">Skin</p>
+    <h3 class="service-card__title">Express Facial</h3>
+    <p class="service-card__desc">A quick cleanse, gentle exfoliation and hydration for a fresh look.</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">₹900</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>45 min</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service=express-facial">Book Now<span class="visually-hidden">: Express Facial (Unisex)</span></a>
+  </div>
+</article>
+
+        </div>
+
+        <div class="empty-state" data-filter-empty hidden>
+          <h3>No services match these filters</h3>
+          <p>Try another category or customer type — or <a href="appointment.html">ask us</a> and we'll help you choose.</p>
+        </div>
+
+        <div class="after-grid"><p class="demo-note" role="note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span><strong>Demo pricing shown for portfolio purposes.</strong> Prices are fictional starting prices in INR.</span></p>
+</div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container cta-band__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">Your time, your way</p>
+          <h2 class="cta-band__title" id="cta-title">Ready for your next appointment?</h2>
+          <p class="cta-band__text">Tell us what you need — we'll help you choose the right service for you.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn--light" href="appointment.html">Book an Appointment</a>
+          <a class="btn btn--ghost-light" href="https://wa.me/?text=Hello%20Lumi%C3%A8re%20Studio%20(demo)%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp<span class="visually-hidden"> (opens in a new tab, demo link)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="logo logo--light" href="index.html" aria-label="Lumière Studio — home">
+          <span class="logo__mark" aria-hidden="true">L</span>
+          <span class="logo__text">
+            <span class="logo__name">Lumière Studio</span>
+            <span class="logo__sub">Beauty, Grooming &amp; Wellness</span>
+          </span>
+        </a>
+        <p class="site-footer__tagline">Beauty, Grooming &amp; Wellness — Designed Around You.</p>
+        <p class="site-footer__demo"><strong>Demo Project.</strong> A fictional brand built for a freelance web design portfolio. No real services, bookings or staff.</p>
+      </div>
+
+      <nav class="site-footer__col" aria-label="Footer">
+        <h2 class="site-footer__title">Explore</h2>
+        <ul class="site-footer__links site-footer__links--split" role="list">
+          <li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="pricing.html">Pricing</a></li>
+<li><a href="team.html">Team</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="appointment.html">Appointment</a></li>
+<li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Opening hours</h2>
+        <dl class="hours"><div class="hours__row"><dt>Mon – Sat</dt><dd>10:00 AM – 8:00 PM</dd></div><div class="hours__row"><dt>Sunday</dt><dd>10:00 AM – 6:00 PM</dd></div></dl>
+      </div>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Contact <span class="tag tag--on-dark">Demo info</span></h2>
+        <ul class="site-footer__links" role="list">
+          <li><a href="tel:+910000000000">+91 XXXXX XXXXX</a></li>
+          <li><a href="mailto:hello@lumiere-studio.demo">hello@lumiere-studio.demo</a></li>
+          <li>Chennai, Tamil Nadu, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>© 2026 Lumière Studio — fictional portfolio demo.</p>
+      <p><a href="legal.html">Demo notice &amp; photo credits</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/modules/core.js" defer></script>
+  <script src="assets/js/modules/nav.js" defer></script>
+  <script src="assets/js/modules/filters.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

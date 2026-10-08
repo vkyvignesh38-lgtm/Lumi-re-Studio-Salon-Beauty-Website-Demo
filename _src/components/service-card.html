@@ -1,0 +1,16 @@
+<article class="service-card" data-category="{{ category }}" data-audience="{{ audience }}" data-item>
+  <div class="service-card__media">
+    {{ image }}
+    <span class="service-card__audience badge badge--{{ audience }}">{{ audience_label }}</span>
+  </div>
+  <div class="service-card__body">
+    <p class="service-card__category">{{ category_label }}</p>
+    <{{ heading }} class="service-card__title">{{ name }}</{{ heading }}>
+    <p class="service-card__desc">{{ description }}</p>
+    <dl class="service-card__meta">
+      <div><dt>From</dt><dd class="service-card__price">{{ price }}</dd></div>
+      <div><dt>Duration</dt><dd><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>{{ duration }}</dd></div>
+    </dl>
+    <a class="btn btn--outline btn--block" href="appointment.html?service={{ id }}">Book Now<span class="visually-hidden">: {{ name }} ({{ audience_label }})</span></a>
+  </div>
+</article>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book an Appointment | Lumière Studio — Beauty, Grooming &amp; Wellness Demo</title>
+  <meta name="description" content="Request a demo appointment for beauty, grooming and wellness services. Demo booking only — no real appointment is scheduled.">
+  <meta name="theme-color" content="#faf6f0">
+  <meta name="robots" content="index, follow">
+  <!-- canonical: set baseUrl in _src/data/site.json -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lumière Studio (Demo)">
+  <meta property="og:title" content="Book an Appointment | Lumière Studio — Beauty, Grooming &amp; Wellness Demo">
+  <meta property="og:description" content="Request a demo appointment for beauty, grooming and wellness services. Demo booking only — no real appointment is scheduled.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_IN">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body data-page="appointment">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.6 4.9L18.5 9.5l-4.9 1.6L12 16l-1.6-4.9L5.5 9.5l4.9-1.6z"/><path d="M19 15l.7 2.1 2.1.7-2.1.7L19 20.6l-.7-2.1-2.1-.7 2.1-.7z"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.6-3 8.5-7 10-4-1.5-7-5.4-7-10V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19c3-4 6-7 10-9"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 20l1.4-4A8 8 0 1 1 8.5 19z"/><path d="M9 10.5c.5 1.6 1.9 3 3.5 3.5l1.2-1 1.8.8"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <aside class="demo-bar" aria-label="Demo project notice">
+    <p class="container demo-bar__inner"><span class="demo-bar__tag">Demo Project</span> Lumière Studio is a fictional brand created for portfolio purposes. <a href="legal.html">Learn more</a></p>
+  </aside>
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="Lumière Studio — home">
+        <span class="logo__mark" aria-hidden="true">L</span>
+        <span class="logo__text">
+          <span class="logo__name">Lumière Studio</span>
+          <span class="logo__sub">Beauty, Grooming &amp; Wellness</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-menu" aria-label="Main" data-menu>
+        <ul class="nav__list" role="list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="services.html">Services</a></li>
+          <li><a class="nav__link" href="pricing.html">Pricing</a></li>
+          <li><a class="nav__link" href="team.html">Team</a></li>
+          <li><a class="nav__link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav__link" href="appointment.html" aria-current="page">Appointment</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta-mobile" href="appointment.html">Book an Appointment</a>
+      </nav>
+
+      <a class="btn btn--primary site-header__cta" href="appointment.html">Book an Appointment</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu" data-menu-toggle>
+        <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <header class="page-hero">
+      <div class="container page-hero__inner">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Appointment</li></ol>
+        <p class="eyebrow">Appointment</p>
+        <h1>Book Your Appointment</h1>
+        <p class="lead">Tell us what you need and we'll help you choose the right service.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-label="Appointment request">
+      <div class="container booking-layout">
+        <div class="form-card">
+          <form class="booking-form" data-appointment novalidate aria-describedby="form-intro">
+            <p class="demo-note" id="form-intro" role="note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span><strong>Demo booking form.</strong> Your details stay in your browser — nothing is sent, stored or scheduled. Fields marked <span class="req" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</span></p>
+
+            <div class="error-summary" data-error-summary tabindex="-1" role="alert" hidden>
+              <h2>There is a problem with your request</h2>
+              <ul></ul>
+            </div>
+
+            <div class="form-grid mt-md">
+              <div class="field">
+                <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="name" name="name" type="text" autocomplete="name" required maxlength="60" aria-describedby="name-error" placeholder="Your full name">
+                <p class="field__error" id="name-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="16" aria-describedby="phone-hint phone-error" placeholder="98765 43210">
+                <p class="field__hint" id="phone-hint">10-digit mobile number; +91 is optional.</p>
+                <p class="field__error" id="phone-error"></p>
+              </div>
+
+              <div class="field field--full">
+                <label for="email">Email <span class="muted">(optional)</span></label>
+                <input class="input" id="email" name="email" type="email" autocomplete="email" maxlength="80" aria-describedby="email-error" placeholder="name@example.com">
+                <p class="field__error" id="email-error"></p>
+              </div>
+
+              <fieldset class="field field--full">
+                <legend>Customer type <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(required)</span></legend>
+                <div class="choice-group" data-customer-type role="radiogroup" aria-describedby="customerType-error">
+                  <label class="choice"><input type="radio" name="customerType" id="type-women" value="women" required><span>Women</span></label>
+                  <label class="choice"><input type="radio" name="customerType" id="type-men" value="men"><span>Men</span></label>
+                  <label class="choice"><input type="radio" name="customerType" id="type-unisex" value="unisex"><span>Unisex</span></label>
+                </div>
+                <p class="field__error" id="customerType-error"></p>
+              </fieldset>
+
+              <div class="field field--full">
+                <label for="service">Service <span class="req" aria-hidden="true">*</span></label>
+                <select class="input" id="service" name="service" required aria-describedby="service-hint service-error">
+                  <option value="">Select a service</option><optgroup label="Women"><option value="hair-styling">Hair Styling — from ₹800</option><option value="hair-spa-women">Hair Spa — from ₹1,200</option><option value="signature-facial">Signature Facial — from ₹1,800</option><option value="bridal-makeup">Bridal Makeup — from ₹15,000</option><option value="occasion-makeup">Occasion Makeup — from ₹3,500</option><option value="manicure-pedicure">Manicure &amp; Pedicure — from ₹1,300</option><option value="spa-ritual">Spa Ritual — from ₹2,500</option></optgroup><optgroup label="Men"><option value="mens-haircut">Men&#x27;s Haircut — from ₹400</option><option value="beard-styling">Beard Styling — from ₹300</option><option value="head-massage">Head Massage — from ₹500</option><option value="mens-facial">Men&#x27;s Facial — from ₹1,500</option><option value="hair-spa-men">Hair Spa — from ₹1,200</option><option value="grooming-package">Grooming Package — from ₹2,200</option></optgroup><optgroup label="Unisex"><option value="hair-colour">Hair Colour — from ₹2,000</option><option value="hair-treatment">Hair Treatment — from ₹2,500</option><option value="skin-consultation">Skin Consultation — from ₹500</option><option value="relaxation-spa">Relaxation Spa — from ₹2,800</option><option value="express-facial">Express Facial — from ₹900</option></optgroup>
+                </select>
+                <p class="field__hint" id="service-hint" aria-live="polite">Services are filtered by customer type.</p>
+                <p class="field__error" id="service-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="date">Preferred date <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="date" name="date" type="date" required aria-describedby="date-error">
+                <p class="field__error" id="date-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="time">Preferred time <span class="req" aria-hidden="true">*</span></label>
+                <select class="input" id="time" name="time" required aria-describedby="time-hint time-error">
+                  <option value="">Choose a date first</option>
+                </select>
+                <p class="field__hint" id="time-hint">Mon–Sat 10 AM–8 PM · Sun 10 AM–6 PM</p>
+                <p class="field__error" id="time-error"></p>
+              </div>
+
+              <div class="field field--full">
+                <label for="message">Message <span class="muted">(optional)</span></label>
+                <textarea class="input" id="message" name="message" rows="4" maxlength="500" placeholder="Anything we should know? e.g. hair length, skin sensitivities, event date."></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn--primary" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Request Appointment</button>
+              <p>Demo only — no real appointment will be scheduled.</p>
+            </div>
+          </form>
+
+          <section class="success" data-success hidden aria-labelledby="success-title">
+            <span class="success__icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+            <h2 id="success-title" tabindex="-1">Appointment request received.</h2>
+            <p class="success__demo" role="note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>Demo booking only — no real appointment has been scheduled.</span></p>
+            <p class="muted">Here's a summary of your request. In a live version, the studio would confirm by phone or WhatsApp. You can also send these details yourself:</p>
+            <dl class="summary" data-summary></dl>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="https://wa.me/" target="_blank" rel="noopener" data-whatsapp><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Book via WhatsApp<span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a class="btn btn--outline" href="mailto:hello@lumiere-studio.demo" data-email data-to="hello@lumiere-studio.demo"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Send via Email</a>
+            </div>
+            <p class="field__hint">WhatsApp opens with a pre-filled message and lets you choose the recipient — the demo has no real studio number.</p>
+            <div><button class="btn btn--sm btn--outline" type="button" data-book-again>Make another request</button></div>
+          </section>
+        </div>
+
+        <div class="info-stack">
+          <div class="info-card">
+            <div class="info-card__media"><img src="assets/img/hero/about-interior.jpg" width="1000" height="1250" alt="A bright white studio interior with arched mirrors, shelving and a chandelier" loading="lazy" decoding="async" sizes="(min-width: 960px) 30vw, 92vw"></div>
+            <h2>Opening hours</h2>
+            <dl class="hours"><div class="hours__row"><dt>Mon – Sat</dt><dd>10:00 AM – 8:00 PM</dd></div><div class="hours__row"><dt>Sunday</dt><dd>10:00 AM – 6:00 PM</dd></div></dl>
+          </div>
+          <div class="info-card">
+            <h2>What happens next?</h2>
+            <ul class="check-list check-list--dark">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>We'd review your request and suggest the right specialist.</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>You'd receive a confirmation call or WhatsApp message.</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Arrive five minutes early and relax.</span></li>
+            </ul>
+            <p><em>Illustrative flow for this demo.</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="application/json" id="services-data">{"services": [{"id": "hair-styling", "name": "Hair Styling", "category": "hair", "audience": "women", "price": 800, "duration": "45 min"}, {"id": "hair-spa-women", "name": "Hair Spa", "category": "hair", "audience": "women", "price": 1200, "duration": "60 min"}, {"id": "signature-facial", "name": "Signature Facial", "category": "skin", "audience": "women", "price": 1800, "duration": "75 min"}, {"id": "bridal-makeup", "name": "Bridal Makeup", "category": "bridal", "audience": "women", "price": 15000, "duration": "120 min"}, {"id": "occasion-makeup", "name": "Occasion Makeup", "category": "makeup", "audience": "women", "price": 3500, "duration": "60 min"}, {"id": "manicure-pedicure", "name": "Manicure & Pedicure", "category": "nails", "audience": "women", "price": 1300, "duration": "90 min"}, {"id": "spa-ritual", "name": "Spa Ritual", "category": "spa", "audience": "women", "price": 2500, "duration": "90 min"}, {"id": "mens-haircut", "name": "Men's Haircut", "category": "hair", "audience": "men", "price": 400, "duration": "30 min"}, {"id": "beard-styling", "name": "Beard Styling", "category": "grooming", "audience": "men", "price": 300, "duration": "30 min"}, {"id": "head-massage", "name": "Head Massage", "category": "spa", "audience": "men", "price": 500, "duration": "30 min"}, {"id": "mens-facial", "name": "Men's Facial", "category": "skin", "audience": "men", "price": 1500, "duration": "60 min"}, {"id": "hair-spa-men", "name": "Hair Spa", "category": "hair", "audience": "men", "price": 1200, "duration": "45 min"}, {"id": "grooming-package", "name": "Grooming Package", "category": "grooming", "audience": "men", "price": 2200, "duration": "90 min"}, {"id": "hair-colour", "name": "Hair Colour", "category": "hair", "audience": "unisex", "price": 2000, "duration": "120 min"}, {"id": "hair-treatment", "name": "Hair Treatment", "category": "hair", "audience": "unisex", "price": 2500, "duration": "90 min"}, {"id": "skin-consultation", "name": "Skin Consultation", "category": "skin", "audience": "unisex", "price": 500, "duration": "30 min"}, {"id": "relaxation-spa", "name": "Relaxation Spa", "category": "spa", "audience": "unisex", "price": 2800, "duration": "90 min"}, {"id": "express-facial", "name": "Express Facial", "category": "skin", "audience": "unisex", "price": 900, "duration": "45 min"}], "audiences": [{"id": "women", "label": "Women"}, {"id": "men", "label": "Men"}, {"id": "unisex", "label": "Unisex"}]}</script>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="logo logo--light" href="index.html" aria-label="Lumière Studio — home">
+          <span class="logo__mark" aria-hidden="true">L</span>
+          <span class="logo__text">
+            <span class="logo__name">Lumière Studio</span>
+            <span class="logo__sub">Beauty, Grooming &amp; Wellness</span>
+          </span>
+        </a>
+        <p class="site-footer__tagline">Beauty, Grooming &amp; Wellness — Designed Around You.</p>
+        <p class="site-footer__demo"><strong>Demo Project.</strong> A fictional brand built for a freelance web design portfolio. No real services, bookings or staff.</p>
+      </div>
+
+      <nav class="site-footer__col" aria-label="Footer">
+        <h2 class="site-footer__title">Explore</h2>
+        <ul class="site-footer__links site-footer__links--split" role="list">
+          <li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="pricing.html">Pricing</a></li>
+<li><a href="team.html">Team</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="appointment.html">Appointment</a></li>
+<li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Opening hours</h2>
+        <dl class="hours"><div class="hours__row"><dt>Mon – Sat</dt><dd>10:00 AM – 8:00 PM</dd></div><div class="hours__row"><dt>Sunday</dt><dd>10:00 AM – 6:00 PM</dd></div></dl>
+      </div>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Contact <span class="tag tag--on-dark">Demo info</span></h2>
+        <ul class="site-footer__links" role="list">
+          <li><a href="tel:+910000000000">+91 XXXXX XXXXX</a></li>
+          <li><a href="mailto:hello@lumiere-studio.demo">hello@lumiere-studio.demo</a></li>
+          <li>Chennai, Tamil Nadu, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>© 2026 Lumière Studio — fictional portfolio demo.</p>
+      <p><a href="legal.html">Demo notice &amp; photo credits</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/modules/core.js" defer></script>
+  <script src="assets/js/modules/nav.js" defer></script>
+  <script src="assets/js/modules/appointment.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

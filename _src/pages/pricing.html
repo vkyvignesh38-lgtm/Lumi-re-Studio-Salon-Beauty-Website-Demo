@@ -1,0 +1,34 @@
+    <header class="page-hero">
+      <div class="container page-hero__inner">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Pricing</li></ol>
+        <p class="eyebrow">Pricing</p>
+        <h1>Simple, Transparent Pricing</h1>
+        <p class="lead">Clear starting prices and typical durations, so you know what to expect before you book.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="price-list-title">
+      <div class="container pricing-layout">
+        <div data-tabs>
+          <h2 class="visually-hidden" id="price-list-title">Price list</h2>
+          <div class="tabs__list" role="tablist" aria-label="Price categories">
+            {{ pricing_tabs }}
+          </div>
+          {{ pricing_panels }}
+        </div>
+
+        <section class="aside-card aside-card--sticky" aria-labelledby="good-to-know">
+          <h2 id="good-to-know">Good to know</h2>
+          {{> demo-pricing-note }}
+          <ul class="check-list check-list--dark">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Prices are starting prices and may vary with hair length, density or products used.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Durations are typical and include a short consultation.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Not sure what to choose? Book a skin or hair consultation first.</span></li>
+          </ul>
+          <a class="btn btn--primary btn--block" href="appointment.html">Book an Appointment</a>
+          <a class="btn btn--outline btn--block" href="services.html">Compare services</a>
+        </section>
+      </div>
+    </section>
+
+{{> cta-band }}

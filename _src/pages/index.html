@@ -1,0 +1,166 @@
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Beauty · Grooming · Wellness</p>
+          <h1 class="hero__title" id="hero-title">Look Good.<br><span class="accent">Feel Confident.</span></h1>
+          <p class="hero__text">Personalized beauty, grooming and wellness services for women and men — delivered by skilled professionals in a calm, modern studio.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="appointment.html">Book an Appointment</a>
+            <a class="btn btn--outline" href="services.html">Explore Services <svg class="icon icon--move" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+          <ul class="hero__tags" aria-label="Studio highlights">
+            <li>Women &amp; men</li>
+            <li>Hair · Skin · Grooming</li>
+            <li>Bridal &amp; spa</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <figure class="hero__frame">
+            {{ hero_women }}
+            <figcaption>Hair &amp; Beauty</figcaption>
+          </figure>
+          <figure class="hero__frame hero__frame--offset">
+            {{ hero_men }}
+            <figcaption>Grooming</figcaption>
+          </figure>
+          <p class="hero__seal" aria-hidden="true">Designed<br>around you</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="benefits-title">Why Lumière Studio</h2>
+        <div class="benefits__card">
+          <div class="benefit">
+            <span class="benefit__icon" aria-hidden="true"><svg class="icon"><use href="#i-sparkle"/></svg></span>
+            <div><h3>Premium Services</h3><p>Hair, skin, grooming, bridal &amp; spa under one roof.</p></div>
+          </div>
+          <div class="benefit">
+            <span class="benefit__icon" aria-hidden="true"><svg class="icon"><use href="#i-scissors"/></svg></span>
+            <div><h3>Experienced Specialists</h3><p>Stylists and groomers who listen first.</p></div>
+          </div>
+          <div class="benefit">
+            <span class="benefit__icon" aria-hidden="true"><svg class="icon"><use href="#i-shield"/></svg></span>
+            <div><h3>Hygiene &amp; Safety</h3><p>Clean tools and fresh linen for every guest.</p></div>
+          </div>
+          <div class="benefit">
+            <span class="benefit__icon" aria-hidden="true"><svg class="icon"><use href="#i-leaf"/></svg></span>
+            <div><h3>Relaxing Ambience</h3><p>A calm, unhurried space to unwind.</p></div>
+          </div>
+          <div class="open-card" data-open-today>
+            <p class="open-card__status"><span class="open-card__dot" aria-hidden="true"></span>Open Today</p>
+            <p class="open-card__time" data-open-time>10:00 AM – 8:00 PM</p>
+            <p class="visually-hidden">Studio time, India Standard Time.</p>
+            <p><span data-open-status>Mon–Sat 10–8 · Sun 10–6</span></p>
+            <a href="contact.html">Hours &amp; location</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="audience-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">Designed around you</p>
+          <h2 class="h-lg" id="audience-title">One studio for everyone</h2>
+          <p class="lead">Whether it's a sharp fade, a bridal look or a quiet hour in the spa, every visit begins with a conversation about what you need.</p>
+        </div>
+        <div class="audience-grid">
+          <a class="audience-card reveal" href="services.html?audience=women">
+            {{ aud_women }}
+            <span class="audience-card__body">
+              <span class="audience-card__label">For women</span>
+              <h3>Hair, skin &amp; bridal</h3>
+              <span class="audience-card__text">Styling, facials, nails and long-wear bridal makeup.</span>
+              <span class="audience-card__cta">View services <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </span>
+          </a>
+          <a class="audience-card reveal" href="services.html?audience=men">
+            {{ aud_men }}
+            <span class="audience-card__body">
+              <span class="audience-card__label">For men</span>
+              <h3>Cuts, beards &amp; grooming</h3>
+              <span class="audience-card__text">Precision haircuts, beard styling and men's facials.</span>
+              <span class="audience-card__cta">View services <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </span>
+          </a>
+          <a class="audience-card reveal" href="services.html?audience=unisex">
+            {{ aud_unisex }}
+            <span class="audience-card__body">
+              <span class="audience-card__label">For everyone</span>
+              <h3>Colour, care &amp; spa</h3>
+              <span class="audience-card__text">Hair colour, treatments, skin consultations and relaxation.</span>
+              <span class="audience-card__cta">View services <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div class="stack">
+            <p class="eyebrow">Signature services</p>
+            <h2 class="h-lg" id="featured-title">Popular this season</h2>
+          </div>
+          <a class="link-arrow" href="services.html">View all services <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="card-grid card-grid--4">
+          {{ featured_services }}
+        </div>
+        <div class="after-grid">{{> demo-pricing-note }}</div>
+      </div>
+    </section>
+
+    <section class="studio-band" aria-labelledby="studio-title">
+      {{ studio_wide }}
+      <div class="container">
+        <div class="studio-band__content reveal">
+          <p class="eyebrow eyebrow--light">The studio</p>
+          <h2 class="h-lg" id="studio-title">A calm, modern space — made for unhurried care.</h2>
+          <p>Soft light, warm materials and quiet corners. Every station is reset between guests so you can simply sit back and relax.</p>
+          <ul class="check-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Fresh towels, capes and linen for every guest</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Tools cleaned and sanitised after each service</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Separate, comfortable areas for grooming and spa</li>
+          </ul>
+          <div><a class="btn btn--light" href="about.html">About the studio</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div class="stack">
+            <p class="eyebrow">The specialists</p>
+            <h2 class="h-lg" id="team-title">Meet the team</h2>
+            <p class="muted">Fictional demo profiles, illustrated with stock photography.</p>
+          </div>
+          <a class="link-arrow" href="team.html">Meet our specialists <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="card-grid card-grid--4 card-grid--team-compact">
+          {{ team_cards_compact }}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div class="stack">
+            <p class="eyebrow">Studio moments</p>
+            <h2 class="h-lg" id="gallery-title">Beauty &amp; grooming, beautifully done</h2>
+          </div>
+          <a class="link-arrow" href="gallery.html">Open the gallery <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="mosaic reveal">
+          {{ gallery_preview }}
+        </div>
+      </div>
+    </section>
+
+{{> cta-band }}

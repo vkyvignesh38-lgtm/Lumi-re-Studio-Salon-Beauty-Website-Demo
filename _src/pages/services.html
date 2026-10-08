@@ -1,0 +1,47 @@
+    <header class="page-hero">
+      <div class="container page-hero__inner">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Services</li></ol>
+        <p class="eyebrow">Services</p>
+        <h1>Our Services</h1>
+        <p class="lead">Explore premium beauty, grooming and wellness services designed for everyone.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="services-list-title">
+      <div class="container" data-filterable data-filter-noun="services">
+        <h2 class="visually-hidden" id="services-list-title">Service list</h2>
+
+        <div class="filters">
+          <div class="filters__group" role="group" aria-labelledby="filter-category-label">
+            <p class="filters__label" id="filter-category-label">Category</p>
+            <div class="filters__chips">
+        {{ category_filters }}
+            </div>
+          </div>
+          <div class="filters__group" role="group" aria-labelledby="filter-audience-label">
+            <p class="filters__label" id="filter-audience-label">Customer type</p>
+            <div class="segmented">
+        {{ audience_filters }}
+            </div>
+          </div>
+        </div>
+
+        <div class="filters__bar">
+          <p class="filters__count" data-filter-count aria-live="polite">Showing {{ service_count }} services</p>
+          <p class="filters__count">Women &amp; Men views include unisex services.</p>
+        </div>
+
+        <div class="card-grid">
+          {{ services_grid }}
+        </div>
+
+        <div class="empty-state" data-filter-empty hidden>
+          <h3>No services match these filters</h3>
+          <p>Try another category or customer type — or <a href="appointment.html">ask us</a> and we'll help you choose.</p>
+        </div>
+
+        <div class="after-grid">{{> demo-pricing-note }}</div>
+      </div>
+    </section>
+
+{{> cta-band }}

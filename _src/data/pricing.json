@@ -1,0 +1,65 @@
+{
+  "_note": "Demo pricing shown for portfolio purposes. Fictional prices in INR.",
+  "tabs": [
+    {
+      "id": "women", "label": "Women",
+      "groups": [
+        { "title": "Hair", "items": [
+          { "name": "Haircut", "detail": "Cut & blow-dry finish", "duration": "45 min", "price": 600 },
+          { "name": "Hair Styling", "detail": "Blow-dry, curls or waves", "duration": "45 min", "price": 800 },
+          { "name": "Hair Spa", "detail": "Mask & scalp massage", "duration": "60 min", "price": 1200 }
+        ]},
+        { "title": "Skin, Nails & Spa", "items": [
+          { "name": "Signature Facial", "detail": "Multi-step facial", "duration": "75 min", "price": 1800 },
+          { "name": "Manicure", "detail": "Shape, cuticle care & polish", "duration": "45 min", "price": 700 },
+          { "name": "Manicure & Pedicure", "detail": "Hands & feet", "duration": "90 min", "price": 1300 },
+          { "name": "Spa Ritual", "detail": "Warm stones & aromatic oils", "duration": "90 min", "price": 2500 }
+        ]}
+      ]
+    },
+    {
+      "id": "men", "label": "Men",
+      "groups": [
+        { "title": "Hair & Beard", "items": [
+          { "name": "Men's Haircut", "detail": "Classic or modern cut", "duration": "30 min", "price": 400 },
+          { "name": "Beard Styling", "detail": "Trim, shape & line-up", "duration": "30 min", "price": 300 },
+          { "name": "Hair Spa", "detail": "Scalp cleanse & conditioning", "duration": "45 min", "price": 1200 }
+        ]},
+        { "title": "Skin & Relaxation", "items": [
+          { "name": "Men's Facial", "detail": "Deep cleanse & hydration", "duration": "60 min", "price": 1500 },
+          { "name": "Head Massage", "detail": "Scalp, neck & shoulders", "duration": "30 min", "price": 500 },
+          { "name": "Grooming Package", "detail": "Cut, beard, facial & massage", "duration": "90 min", "price": 2200 }
+        ]}
+      ]
+    },
+    {
+      "id": "unisex", "label": "Unisex",
+      "groups": [
+        { "title": "Hair", "items": [
+          { "name": "Hair Colour", "detail": "Global colour or highlights", "duration": "120 min", "price": 2000 },
+          { "name": "Hair Treatment", "detail": "Frizz, dryness or repair care", "duration": "90 min", "price": 2500 }
+        ]},
+        { "title": "Skin & Spa", "items": [
+          { "name": "Skin Consultation", "detail": "Assessment & care plan", "duration": "30 min", "price": 500 },
+          { "name": "Express Facial", "detail": "Cleanse & hydrate", "duration": "45 min", "price": 900 },
+          { "name": "Relaxation Spa", "detail": "Full-body aromatherapy", "duration": "90 min", "price": 2800 }
+        ]}
+      ]
+    },
+    {
+      "id": "bridal", "label": "Bridal",
+      "groups": [
+        { "title": "For the bride", "items": [
+          { "name": "Bridal Makeup", "detail": "Long-wear ceremony makeup", "duration": "120 min", "price": 15000 },
+          { "name": "Engagement & Reception Makeup", "detail": "Soft glam or statement look", "duration": "90 min", "price": 8000 },
+          { "name": "Bridal Hair Styling", "detail": "Buns, braids & accessories", "duration": "60 min", "price": 3500 }
+        ]},
+        { "title": "For the groom & family", "items": [
+          { "name": "Groom Grooming Package", "detail": "Cut, beard, facial & styling", "duration": "120 min", "price": 4500 },
+          { "name": "Pre-Wedding Glow Facial", "detail": "For anyone in the wedding party", "duration": "75 min", "price": 2400 },
+          { "name": "Family Styling (per person)", "detail": "Hair & light makeup or grooming", "duration": "60 min", "price": 2000 }
+        ]}
+      ]
+    }
+  ]
+}

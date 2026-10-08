@@ -1,0 +1,17 @@
+{
+  "_note": "Fictional demo profiles. Portraits are stock photography of models, not real staff.",
+  "team": [
+    { "id": "aaradhya", "name": "Aaradhya", "role": "Senior Stylist", "image": "team-aaradhya",
+      "bio": "Loves soft, lived-in cuts and colour that grows out gracefully. Starts every appointment with a relaxed consultation.",
+      "focus": ["Cuts", "Colour", "Styling"] },
+    { "id": "arjun", "name": "Arjun", "role": "Grooming Specialist", "image": "team-arjun",
+      "bio": "Focused on clean fades, sharp beard lines and grooming routines that are easy to keep up at home.",
+      "focus": ["Fades", "Beards", "Men's skin"] },
+    { "id": "priya", "name": "Priya", "role": "Skin Specialist", "image": "team-priya",
+      "bio": "Believes in gentle, consistent skincare. Takes time to understand your skin before recommending a treatment.",
+      "focus": ["Facials", "Consultations", "Skin care"] },
+    { "id": "meera", "name": "Meera", "role": "Makeup & Bridal Artist", "image": "team-meera",
+      "bio": "Creates calm, unhurried bridal mornings and makeup that looks like you — just a little more radiant.",
+      "focus": ["Bridal", "Occasion", "Hair styling"] }
+  ]
+}

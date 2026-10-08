@@ -1,0 +1,40 @@
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="logo logo--light" href="index.html" aria-label="Lumière Studio — home">
+          <span class="logo__mark" aria-hidden="true">L</span>
+          <span class="logo__text">
+            <span class="logo__name">Lumière Studio</span>
+            <span class="logo__sub">{{ subtitle }}</span>
+          </span>
+        </a>
+        <p class="site-footer__tagline">{{ tagline }}</p>
+        <p class="site-footer__demo"><strong>Demo Project.</strong> A fictional brand built for a freelance web design portfolio. No real services, bookings or staff.</p>
+      </div>
+
+      <nav class="site-footer__col" aria-label="Footer">
+        <h2 class="site-footer__title">Explore</h2>
+        <ul class="site-footer__links site-footer__links--split" role="list">
+          {{ footer_links }}
+        </ul>
+      </nav>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Opening hours</h2>
+        {{ hours }}
+      </div>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Contact <span class="tag tag--on-dark">Demo info</span></h2>
+        <ul class="site-footer__links" role="list">
+          <li><a href="{{ phone_href }}">{{ phone }}</a></li>
+          <li><a href="mailto:{{ email }}">{{ email }}</a></li>
+          <li>{{ city }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>© {{ year }} Lumière Studio — fictional portfolio demo.</p>
+      <p><a href="legal.html">Demo notice &amp; photo credits</a></p>
+    </div>
+  </footer>

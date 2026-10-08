@@ -1,0 +1,51 @@
+    <header class="page-hero">
+      <div class="container page-hero__inner">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Demo notice &amp; credits</li></ol>
+        <p class="eyebrow">Legal</p>
+        <h1>Demo Notice &amp; Photo Credits</h1>
+        <p class="lead">Transparency about what this website is — and isn't.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-label="Demo notice and credits">
+      <div class="container prose">
+        <div class="notice-card" id="demo-notice">
+          <h2>Demo Project Notice</h2>
+          <p>Lumière Studio is a fictional brand created for portfolio demonstration purposes.</p>
+        </div>
+
+        <h2>What this means</h2>
+        <ul>
+          <li>Lumière Studio is not a real salon, and no services can be purchased here.</li>
+          <li>The appointment form is a <strong>demo booking only</strong> — no real appointment is ever scheduled, and form data never leaves your browser.</li>
+          <li>All prices are <strong>demo pricing shown for portfolio purposes</strong>.</li>
+          <li>Team members (Aaradhya, Arjun, Priya and Meera) are fictional profiles. No real employment, certifications, awards or years of experience are claimed.</li>
+          <li>There are no real customers, reviews, awards, certifications or business results on this website.</li>
+          <li>Contact details are placeholders: “+91 XXXXX XXXXX”, the <code>.demo</code> email address and the Chennai location do not belong to a real business. The map is an illustration.</li>
+        </ul>
+
+        <h2>Privacy</h2>
+        <p>This demo has no backend, analytics or cookies. Information typed into the appointment form is only used in your browser to build the on-screen summary and the optional WhatsApp / email links, which you choose whether to send.</p>
+
+        <h2 id="photo-credits">Photo Credits</h2>
+        <p>All {{ credit_count }} image files on this website ({{ credit_unique }} unique photographs, some cropped differently) are stock photographs from <a href="https://unsplash.com" rel="noopener" target="_blank">Unsplash<span class="visually-hidden"> (opens in a new tab)</span></a>, used under the <a href="https://unsplash.com/license" rel="noopener" target="_blank">Unsplash License<span class="visually-hidden"> (opens in a new tab)</span></a>. The images do not belong to Lumière Studio and do not depict its premises, work, clients or team. Portraits on the Team page show models, not the fictional specialists.</p>
+        <p>Each source link below opens the original image on Unsplash's CDN, where the photographer can be identified.</p>
+      </div>
+      <div class="container">
+        <div class="table-wrap" tabindex="0" role="region" aria-labelledby="credits-caption">
+          <table class="credits">
+            <caption class="visually-hidden" id="credits-caption">Photo credits — file, subject and source</caption>
+            <thead><tr><th scope="col">File</th><th scope="col">Subject</th><th scope="col">Source</th></tr></thead>
+            <tbody>
+              {{ credit_rows }}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="container prose mt-lg">
+        <h2>Fonts &amp; icons</h2>
+        <p>Typefaces: <em>Cormorant Garamond</em> and <em>Manrope</em> via Google Fonts (SIL Open Font License). Icons are simple custom SVG line drawings made for this demo.</p>
+        <h2>Trademarks</h2>
+        <p>WhatsApp and Instagram are trademarks of their respective owners and are referenced only as example contact channels. No affiliation is implied.</p>
+      </div>
+    </section>

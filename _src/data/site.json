@@ -1,0 +1,77 @@
+{
+  "brand": "Lumière Studio",
+  "subtitle": "Beauty, Grooming & Wellness",
+  "tagline": "Beauty, Grooming & Wellness — Designed Around You.",
+  "baseUrl": "",
+  "ogImage": "assets/img/og-image.jpg",
+  "year": "2026",
+  "contact": {
+    "phoneDisplay": "+91 XXXXX XXXXX",
+    "phoneHref": "tel:+910000000000",
+    "email": "hello@lumiere-studio.demo",
+    "whatsappHref": "https://wa.me/?text=Hello%20Lumi%C3%A8re%20Studio%20(demo)%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services.",
+    "instagramHref": "https://www.instagram.com/",
+    "city": "Chennai, Tamil Nadu, India"
+  },
+  "hours": [
+    { "days": "Mon – Sat", "time": "10:00 AM – 8:00 PM" },
+    { "days": "Sunday", "time": "10:00 AM – 6:00 PM" }
+  ],
+  "nav": [
+    { "page": "index", "label": "Home" },
+    { "page": "about", "label": "About" },
+    { "page": "services", "label": "Services" },
+    { "page": "pricing", "label": "Pricing" },
+    { "page": "team", "label": "Team" },
+    { "page": "gallery", "label": "Gallery" },
+    { "page": "appointment", "label": "Appointment" },
+    { "page": "contact", "label": "Contact" }
+  ],
+  "pages": {
+    "index": {
+      "title": "Lumière Studio | Beauty, Grooming & Wellness Demo",
+      "description": "Premium beauty, grooming and wellness studio website demo featuring services, pricing, team, gallery and appointment experience for women and men.",
+      "scripts": ["hours"]
+    },
+    "about": {
+      "title": "About | Lumière Studio — Beauty, Grooming & Wellness Demo",
+      "description": "Lumière Studio brings beauty, grooming and wellness services for women and men together in a calm, personalised studio. A fictional portfolio demo.",
+      "scripts": []
+    },
+    "services": {
+      "title": "Services | Lumière Studio — Beauty, Grooming & Wellness Demo",
+      "description": "Explore hair, skin, grooming, bridal, makeup, spa and nail services for women and men. Demo pricing shown for portfolio purposes.",
+      "scripts": ["filters"]
+    },
+    "pricing": {
+      "title": "Pricing | Lumière Studio — Beauty, Grooming & Wellness Demo",
+      "description": "Simple, transparent demo pricing for women's, men's, unisex and bridal services at Lumière Studio, a fictional portfolio project.",
+      "scripts": ["tabs"]
+    },
+    "team": {
+      "title": "Team | Lumière Studio — Beauty, Grooming & Wellness Demo",
+      "description": "Meet the fictional specialists of Lumière Studio — styling, grooming, skin and bridal profiles created for a portfolio demo.",
+      "scripts": []
+    },
+    "gallery": {
+      "title": "Gallery | Lumière Studio — Beauty, Grooming & Wellness Demo",
+      "description": "Studio moments across hair, grooming, makeup, bridal and spa — a filterable gallery with an accessible lightbox.",
+      "scripts": ["filters", "lightbox"]
+    },
+    "appointment": {
+      "title": "Book an Appointment | Lumière Studio — Beauty, Grooming & Wellness Demo",
+      "description": "Request a demo appointment for beauty, grooming and wellness services. Demo booking only — no real appointment is scheduled.",
+      "scripts": ["appointment"]
+    },
+    "contact": {
+      "title": "Contact | Lumière Studio — Beauty, Grooming & Wellness Demo",
+      "description": "Get in touch with Lumière Studio. Demo contact details for a fictional beauty, grooming and wellness studio in Chennai.",
+      "scripts": ["hours"]
+    },
+    "legal": {
+      "title": "Demo Notice & Photo Credits | Lumière Studio",
+      "description": "Lumière Studio is a fictional brand created for portfolio demonstration purposes. Demo notice and photo credits.",
+      "scripts": []
+    }
+  }
+}

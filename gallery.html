@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Lumière Studio — Beauty, Grooming &amp; Wellness Demo</title>
+  <meta name="description" content="Studio moments across hair, grooming, makeup, bridal and spa — a filterable gallery with an accessible lightbox.">
+  <meta name="theme-color" content="#faf6f0">
+  <meta name="robots" content="index, follow">
+  <!-- canonical: set baseUrl in _src/data/site.json -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lumière Studio (Demo)">
+  <meta property="og:title" content="Gallery | Lumière Studio — Beauty, Grooming &amp; Wellness Demo">
+  <meta property="og:description" content="Studio moments across hair, grooming, makeup, bridal and spa — a filterable gallery with an accessible lightbox.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_IN">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body data-page="gallery">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.6 4.9L18.5 9.5l-4.9 1.6L12 16l-1.6-4.9L5.5 9.5l4.9-1.6z"/><path d="M19 15l.7 2.1 2.1.7-2.1.7L19 20.6l-.7-2.1-2.1-.7 2.1-.7z"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.6-3 8.5-7 10-4-1.5-7-5.4-7-10V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19c3-4 6-7 10-9"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 20l1.4-4A8 8 0 1 1 8.5 19z"/><path d="M9 10.5c.5 1.6 1.9 3 3.5 3.5l1.2-1 1.8.8"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <aside class="demo-bar" aria-label="Demo project notice">
+    <p class="container demo-bar__inner"><span class="demo-bar__tag">Demo Project</span> Lumière Studio is a fictional brand created for portfolio purposes. <a href="legal.html">Learn more</a></p>
+  </aside>
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="Lumière Studio — home">
+        <span class="logo__mark" aria-hidden="true">L</span>
+        <span class="logo__text">
+          <span class="logo__name">Lumière Studio</span>
+          <span class="logo__sub">Beauty, Grooming &amp; Wellness</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-menu" aria-label="Main" data-menu>
+        <ul class="nav__list" role="list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="services.html">Services</a></li>
+          <li><a class="nav__link" href="pricing.html">Pricing</a></li>
+          <li><a class="nav__link" href="team.html">Team</a></li>
+          <li><a class="nav__link" href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a class="nav__link" href="appointment.html">Appointment</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta-mobile" href="appointment.html">Book an Appointment</a>
+      </nav>
+
+      <a class="btn btn--primary site-header__cta" href="appointment.html">Book an Appointment</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu" data-menu-toggle>
+        <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <header class="page-hero">
+      <div class="container page-hero__inner">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Gallery</li></ol>
+        <p class="eyebrow">Gallery</p>
+        <h1>Studio Moments</h1>
+        <p class="lead">Explore our space, beauty work and grooming experience.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="gallery-list-title">
+      <div class="container" data-filterable data-filter-noun="photos">
+        <h2 class="visually-hidden" id="gallery-list-title">Photos</h2>
+        <div class="filters">
+          <div class="filters__group" role="group" aria-labelledby="gallery-filter-label">
+            <p class="filters__label" id="gallery-filter-label">Filter photos</p>
+            <div class="filters__chips">
+        <button type="button" class="chip" data-filter-category="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-filter-category="hair" aria-pressed="false">Hair</button>
+        <button type="button" class="chip" data-filter-category="grooming" aria-pressed="false">Grooming</button>
+        <button type="button" class="chip" data-filter-category="makeup" aria-pressed="false">Makeup</button>
+        <button type="button" class="chip" data-filter-category="bridal" aria-pressed="false">Bridal</button>
+        <button type="button" class="chip" data-filter-category="spa" aria-pressed="false">Spa</button>
+        <button type="button" class="chip" data-filter-category="studio" aria-pressed="false">Studio</button>
+            </div>
+          </div>
+        </div>
+        <div class="filters__bar">
+          <p class="filters__count" data-filter-count aria-live="polite">Showing 22 photos</p>
+          <p class="filters__count">Select a photo to view it larger.</p>
+        </div>
+
+        <ul class="gallery" role="list">
+          <li class="gallery__item" data-category="hair" data-item>
+  <a class="gallery__link" href="assets/img/gallery/hair-blowdry.jpg" data-lightbox data-full="assets/img/gallery/hair-blowdry.jpg" data-width="1600" data-height="1068" data-caption="Blow-dry &amp; finish" data-alt="A stylist blow-dries a client&#x27;s short hair while they both smile">
+    <img src="assets/img/gallery/hair-blowdry-thumb.jpg" width="720" height="481" alt="A stylist blow-dries a client&#x27;s short hair while they both smile" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Hair</span>
+      <span class="gallery__caption">Blow-dry &amp; finish</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Blow-dry &amp; finish (Hair)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="grooming" data-item>
+  <a class="gallery__link" href="assets/img/gallery/groom-beard.jpg" data-lightbox data-full="assets/img/gallery/groom-beard.jpg" data-width="1600" data-height="2409" data-caption="Beard shaping" data-alt="Black-and-white photo of a full beard being trimmed with scissors">
+    <img src="assets/img/gallery/groom-beard-thumb.jpg" width="720" height="1084" alt="Black-and-white photo of a full beard being trimmed with scissors" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Grooming</span>
+      <span class="gallery__caption">Beard shaping</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Beard shaping (Grooming)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="studio" data-item>
+  <a class="gallery__link" href="assets/img/gallery/studio-chairs.jpg" data-lightbox data-full="assets/img/gallery/studio-chairs.jpg" data-width="1600" data-height="1200" data-caption="Styling floor" data-alt="A row of styling stations with large windows and black chairs">
+    <img src="assets/img/gallery/studio-chairs-thumb.jpg" width="720" height="540" alt="A row of styling stations with large windows and black chairs" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Studio</span>
+      <span class="gallery__caption">Styling floor</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Styling floor (Studio)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="bridal" data-item>
+  <a class="gallery__link" href="assets/img/gallery/bridal-saree.jpg" data-lightbox data-full="assets/img/gallery/bridal-saree.jpg" data-width="1600" data-height="2400" data-caption="Bridal look" data-alt="A bride in a red and gold silk saree with traditional jewellery">
+    <img src="assets/img/gallery/bridal-saree-thumb.jpg" width="720" height="1080" alt="A bride in a red and gold silk saree with traditional jewellery" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Bridal</span>
+      <span class="gallery__caption">Bridal look</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Bridal look (Bridal)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="spa" data-item>
+  <a class="gallery__link" href="assets/img/gallery/spa-overhead.jpg" data-lightbox data-full="assets/img/gallery/spa-overhead.jpg" data-width="1600" data-height="1068" data-caption="Head &amp; face massage" data-alt="Overhead view of a client receiving a relaxing head and face massage">
+    <img src="assets/img/gallery/spa-overhead-thumb.jpg" width="720" height="481" alt="Overhead view of a client receiving a relaxing head and face massage" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Spa</span>
+      <span class="gallery__caption">Head &amp; face massage</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Head &amp; face massage (Spa)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="hair" data-item>
+  <a class="gallery__link" href="assets/img/gallery/hair-textured.jpg" data-lightbox data-full="assets/img/gallery/hair-textured.jpg" data-width="1600" data-height="1067" data-caption="Textured men&#x27;s cut" data-alt="A barber cuts a man&#x27;s textured hair with scissors">
+    <img src="assets/img/gallery/hair-textured-thumb.jpg" width="720" height="480" alt="A barber cuts a man&#x27;s textured hair with scissors" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Hair</span>
+      <span class="gallery__caption">Textured men&#x27;s cut</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Textured men&#x27;s cut (Hair)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="makeup" data-item>
+  <a class="gallery__link" href="assets/img/gallery/makeup-lips.jpg" data-lightbox data-full="assets/img/gallery/makeup-lips.jpg" data-width="1600" data-height="1067" data-caption="Lip detail" data-alt="A makeup artist applies lip colour with a fine brush">
+    <img src="assets/img/gallery/makeup-lips-thumb.jpg" width="720" height="480" alt="A makeup artist applies lip colour with a fine brush" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Makeup</span>
+      <span class="gallery__caption">Lip detail</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Lip detail (Makeup)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="spa" data-item>
+  <a class="gallery__link" href="assets/img/gallery/spa-nails.jpg" data-lightbox data-full="assets/img/gallery/spa-nails.jpg" data-width="1600" data-height="1601" data-caption="Soft-tone manicure" data-alt="A hand with lilac, white and silver manicured nails on a knitted throw">
+    <img src="assets/img/gallery/spa-nails-thumb.jpg" width="720" height="720" alt="A hand with lilac, white and silver manicured nails on a knitted throw" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Spa</span>
+      <span class="gallery__caption">Soft-tone manicure</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Soft-tone manicure (Spa)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="grooming" data-item>
+  <a class="gallery__link" href="assets/img/gallery/groom-clipper.jpg" data-lightbox data-full="assets/img/gallery/groom-clipper.jpg" data-width="1600" data-height="1067" data-caption="Clipper work" data-alt="A barber uses clippers on the back of a client&#x27;s head">
+    <img src="assets/img/gallery/groom-clipper-thumb.jpg" width="720" height="480" alt="A barber uses clippers on the back of a client&#x27;s head" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Grooming</span>
+      <span class="gallery__caption">Clipper work</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Clipper work (Grooming)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="studio" data-item>
+  <a class="gallery__link" href="assets/img/gallery/studio-barber.jpg" data-lightbox data-full="assets/img/gallery/studio-barber.jpg" data-width="1600" data-height="1063" data-caption="Grooming lounge" data-alt="A warm grooming lounge with leather chairs, brick walls and pendant lights">
+    <img src="assets/img/gallery/studio-barber-thumb.jpg" width="720" height="478" alt="A warm grooming lounge with leather chairs, brick walls and pendant lights" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Studio</span>
+      <span class="gallery__caption">Grooming lounge</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Grooming lounge (Studio)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="hair" data-item>
+  <a class="gallery__link" href="assets/img/gallery/hair-waves.jpg" data-lightbox data-full="assets/img/gallery/hair-waves.jpg" data-width="1600" data-height="1068" data-caption="Soft waves" data-alt="A woman runs her hands through long, wavy brown hair">
+    <img src="assets/img/gallery/hair-waves-thumb.jpg" width="720" height="481" alt="A woman runs her hands through long, wavy brown hair" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Hair</span>
+      <span class="gallery__caption">Soft waves</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Soft waves (Hair)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="bridal" data-item>
+  <a class="gallery__link" href="assets/img/gallery/bridal-ceremony.jpg" data-lightbox data-full="assets/img/gallery/bridal-ceremony.jpg" data-width="1600" data-height="1067" data-caption="Wedding day" data-alt="A bride and groom in traditional Indian wedding attire at their ceremony">
+    <img src="assets/img/gallery/bridal-ceremony-thumb.jpg" width="720" height="480" alt="A bride and groom in traditional Indian wedding attire at their ceremony" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Bridal</span>
+      <span class="gallery__caption">Wedding day</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Wedding day (Bridal)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="spa" data-item>
+  <a class="gallery__link" href="assets/img/gallery/spa-facial.jpg" data-lightbox data-full="assets/img/gallery/spa-facial.jpg" data-width="1600" data-height="1067" data-caption="Hydrating facial" data-alt="A client with a hair band receives a cream facial mask">
+    <img src="assets/img/gallery/spa-facial-thumb.jpg" width="720" height="480" alt="A client with a hair band receives a cream facial mask" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Spa</span>
+      <span class="gallery__caption">Hydrating facial</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Hydrating facial (Spa)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="makeup" data-item>
+  <a class="gallery__link" href="assets/img/gallery/makeup-brushes.jpg" data-lightbox data-full="assets/img/gallery/makeup-brushes.jpg" data-width="1600" data-height="1067" data-caption="Artist&#x27;s kit" data-alt="A cup of makeup brushes on a dressing table">
+    <img src="assets/img/gallery/makeup-brushes-thumb.jpg" width="720" height="480" alt="A cup of makeup brushes on a dressing table" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Makeup</span>
+      <span class="gallery__caption">Artist&#x27;s kit</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Artist&#x27;s kit (Makeup)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="grooming" data-item>
+  <a class="gallery__link" href="assets/img/gallery/groom-fade.jpg" data-lightbox data-full="assets/img/gallery/groom-fade.jpg" data-width="1600" data-height="2397" data-caption="Fade &amp; beard line-up" data-alt="A barber combs a client&#x27;s sharply shaped beard and fade">
+    <img src="assets/img/gallery/groom-fade-thumb.jpg" width="720" height="1079" alt="A barber combs a client&#x27;s sharply shaped beard and fade" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Grooming</span>
+      <span class="gallery__caption">Fade &amp; beard line-up</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Fade &amp; beard line-up (Grooming)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="studio" data-item>
+  <a class="gallery__link" href="assets/img/gallery/studio-tools.jpg" data-lightbox data-full="assets/img/gallery/studio-tools.jpg" data-width="1600" data-height="919" data-caption="Workstation" data-alt="Brushes, combs and a hair dryer arranged on a white workstation">
+    <img src="assets/img/gallery/studio-tools-thumb.jpg" width="720" height="413" alt="Brushes, combs and a hair dryer arranged on a white workstation" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Studio</span>
+      <span class="gallery__caption">Workstation</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Workstation (Studio)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="hair" data-item>
+  <a class="gallery__link" href="assets/img/gallery/hair-curls.jpg" data-lightbox data-full="assets/img/gallery/hair-curls.jpg" data-width="1600" data-height="2847" data-caption="Curl styling" data-alt="Long hair being curled with a curling tong">
+    <img src="assets/img/gallery/hair-curls-thumb.jpg" width="720" height="1281" alt="Long hair being curled with a curling tong" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Hair</span>
+      <span class="gallery__caption">Curl styling</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Curl styling (Hair)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="bridal" data-item>
+  <a class="gallery__link" href="assets/img/gallery/bridal-traditional.jpg" data-lightbox data-full="assets/img/gallery/bridal-traditional.jpg" data-width="1600" data-height="2400" data-caption="Traditional styling" data-alt="A woman in a green embroidered outfit with a maang tikka and earrings">
+    <img src="assets/img/gallery/bridal-traditional-thumb.jpg" width="720" height="1080" alt="A woman in a green embroidered outfit with a maang tikka and earrings" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Bridal</span>
+      <span class="gallery__caption">Traditional styling</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Traditional styling (Bridal)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="spa" data-item>
+  <a class="gallery__link" href="assets/img/gallery/spa-essentials.jpg" data-lightbox data-full="assets/img/gallery/spa-essentials.jpg" data-width="1600" data-height="2400" data-caption="Spa essentials" data-alt="Spa essentials: a folded towel, bath salts, soap and a wooden brush">
+    <img src="assets/img/gallery/spa-essentials-thumb.jpg" width="720" height="1080" alt="Spa essentials: a folded towel, bath salts, soap and a wooden brush" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Spa</span>
+      <span class="gallery__caption">Spa essentials</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Spa essentials (Spa)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="makeup" data-item>
+  <a class="gallery__link" href="assets/img/gallery/makeup-palette.jpg" data-lightbox data-full="assets/img/gallery/makeup-palette.jpg" data-width="1600" data-height="2133" data-caption="Colour palette" data-alt="A makeup artist holds an eyeshadow palette and brush">
+    <img src="assets/img/gallery/makeup-palette-thumb.jpg" width="720" height="960" alt="A makeup artist holds an eyeshadow palette and brush" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Makeup</span>
+      <span class="gallery__caption">Colour palette</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Colour palette (Makeup)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="spa" data-item>
+  <a class="gallery__link" href="assets/img/gallery/spa-nails-dark.jpg" data-lightbox data-full="assets/img/gallery/spa-nails-dark.jpg" data-width="1600" data-height="2400" data-caption="Nail art" data-alt="A hand with glossy dark tortoiseshell nail art against a grey sweater">
+    <img src="assets/img/gallery/spa-nails-dark-thumb.jpg" width="720" height="1080" alt="A hand with glossy dark tortoiseshell nail art against a grey sweater" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Spa</span>
+      <span class="gallery__caption">Nail art</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Nail art (Spa)</span>
+  </a>
+</li>
+
+<li class="gallery__item" data-category="studio" data-item>
+  <a class="gallery__link" href="assets/img/gallery/studio-lounge.jpg" data-lightbox data-full="assets/img/gallery/studio-lounge.jpg" data-width="1600" data-height="1067" data-caption="Sunlit studio" data-alt="A sunlit studio floor with styling chairs, mirrors and wooden floors">
+    <img src="assets/img/gallery/studio-lounge-thumb.jpg" width="720" height="480" alt="A sunlit studio floor with styling chairs, mirrors and wooden floors" loading="lazy" decoding="async" sizes="(min-width: 1200px) 400px, (min-width: 640px) 45vw, 92vw">
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">Studio</span>
+      <span class="gallery__caption">Sunlit studio</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: Sunlit studio (Studio)</span>
+  </a>
+</li>
+
+        </ul>
+
+        <div class="empty-state" data-filter-empty hidden>
+          <h3>No photos in this category yet</h3>
+          <p>Try another filter.</p>
+        </div>
+
+        <div class="after-grid">
+          <p class="demo-note" role="note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span><strong>Stock photography.</strong> Gallery images are from Unsplash and do not show work by, or clients of, Lumière Studio. See <a href="legal.html#photo-credits">photo credits</a>.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="lightbox" aria-label="Photo viewer" data-lightbox-dialog>
+      <div class="lightbox__top">
+        <p class="lightbox__counter" data-lb-counter aria-live="polite"></p>
+        <button class="lightbox__btn" type="button" aria-label="Close photo viewer" data-lb-close><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </div>
+      <div class="lightbox__stage" data-lb-stage>
+        <figure class="lightbox__figure">
+          <img class="lightbox__img" data-lb-img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
+          <figcaption class="lightbox__caption"><small data-lb-category></small><span data-lb-caption></span></figcaption>
+        </figure>
+        <button class="lightbox__btn lightbox__nav lightbox__nav--prev" type="button" aria-label="Previous photo" data-lb-prev><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button>
+        <button class="lightbox__btn lightbox__nav lightbox__nav--next" type="button" aria-label="Next photo" data-lb-next><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button>
+      </div>
+      <p class="lightbox__hint">Use ← → keys or swipe to browse · Esc to close</p>
+    </dialog>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container cta-band__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">Your time, your way</p>
+          <h2 class="cta-band__title" id="cta-title">Ready for your next appointment?</h2>
+          <p class="cta-band__text">Tell us what you need — we'll help you choose the right service for you.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn--light" href="appointment.html">Book an Appointment</a>
+          <a class="btn btn--ghost-light" href="https://wa.me/?text=Hello%20Lumi%C3%A8re%20Studio%20(demo)%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp<span class="visually-hidden"> (opens in a new tab, demo link)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="logo logo--light" href="index.html" aria-label="Lumière Studio — home">
+          <span class="logo__mark" aria-hidden="true">L</span>
+          <span class="logo__text">
+            <span class="logo__name">Lumière Studio</span>
+            <span class="logo__sub">Beauty, Grooming &amp; Wellness</span>
+          </span>
+        </a>
+        <p class="site-footer__tagline">Beauty, Grooming &amp; Wellness — Designed Around You.</p>
+        <p class="site-footer__demo"><strong>Demo Project.</strong> A fictional brand built for a freelance web design portfolio. No real services, bookings or staff.</p>
+      </div>
+
+      <nav class="site-footer__col" aria-label="Footer">
+        <h2 class="site-footer__title">Explore</h2>
+        <ul class="site-footer__links site-footer__links--split" role="list">
+          <li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="pricing.html">Pricing</a></li>
+<li><a href="team.html">Team</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="appointment.html">Appointment</a></li>
+<li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Opening hours</h2>
+        <dl class="hours"><div class="hours__row"><dt>Mon – Sat</dt><dd>10:00 AM – 8:00 PM</dd></div><div class="hours__row"><dt>Sunday</dt><dd>10:00 AM – 6:00 PM</dd></div></dl>
+      </div>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Contact <span class="tag tag--on-dark">Demo info</span></h2>
+        <ul class="site-footer__links" role="list">
+          <li><a href="tel:+910000000000">+91 XXXXX XXXXX</a></li>
+          <li><a href="mailto:hello@lumiere-studio.demo">hello@lumiere-studio.demo</a></li>
+          <li>Chennai, Tamil Nadu, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>© 2026 Lumière Studio — fictional portfolio demo.</p>
+      <p><a href="legal.html">Demo notice &amp; photo credits</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/modules/core.js" defer></script>
+  <script src="assets/js/modules/nav.js" defer></script>
+  <script src="assets/js/modules/filters.js" defer></script>
+  <script src="assets/js/modules/lightbox.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

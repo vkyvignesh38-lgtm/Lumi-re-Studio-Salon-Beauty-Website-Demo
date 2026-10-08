@@ -1,0 +1,24 @@
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="Lumière Studio — home">
+        <span class="logo__mark" aria-hidden="true">L</span>
+        <span class="logo__text">
+          <span class="logo__name">Lumière Studio</span>
+          <span class="logo__sub">{{ subtitle }}</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-menu" aria-label="Main" data-menu>
+        <ul class="nav__list" role="list">
+          {{ nav_links }}
+        </ul>
+        <a class="btn btn--primary nav__cta-mobile" href="appointment.html">Book an Appointment</a>
+      </nav>
+
+      <a class="btn btn--primary site-header__cta" href="appointment.html">Book an Appointment</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu" data-menu-toggle>
+        <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>

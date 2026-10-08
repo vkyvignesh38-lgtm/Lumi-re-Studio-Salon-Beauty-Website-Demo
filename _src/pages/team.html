@@ -1,0 +1,38 @@
+    <header class="page-hero">
+      <div class="container page-hero__inner">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Team</li></ol>
+        <p class="eyebrow">Team</p>
+        <h1>Meet Our Specialists</h1>
+        <p class="lead">A talented team focused on helping you look and feel your best.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="team-list-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="team-list-title">Specialists</h2>
+        <div class="card-grid card-grid--4">
+          {{ team_cards }}
+        </div>
+        <div class="after-grid">
+          <p class="demo-note" role="note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span><strong>These are fictional demo profiles.</strong> Names, roles and descriptions were written for a portfolio project, and the portraits are stock photographs of models. They do not represent real employees, qualifications or experience.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" aria-labelledby="team-values-title">
+      <div class="container split">
+        <div class="stack reveal">
+          <p class="eyebrow">How we work</p>
+          <h2 class="h-lg" id="team-values-title">Specialists who listen first</h2>
+          <p class="lead">Each specialist focuses on one craft — styling, grooming, skin or bridal — so you always see someone who knows the details.</p>
+        </div>
+        <ul class="check-list check-list--dark reveal">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Every appointment starts with a short consultation.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Honest advice — including when a simpler service will do.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Easy aftercare tips to keep your look going at home.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>A welcoming approach for every guest, whoever they are.</span></li>
+        </ul>
+      </div>
+    </section>
+
+{{> cta-band }}

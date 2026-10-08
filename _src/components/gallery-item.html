@@ -1,0 +1,11 @@
+<li class="gallery__item" data-category="{{ category }}" data-item>
+  <a class="gallery__link" href="{{ full }}" data-lightbox data-full="{{ full }}" data-width="{{ full_w }}" data-height="{{ full_h }}" data-caption="{{ caption }}" data-alt="{{ alt }}">
+    {{ image }}
+    <span class="gallery__overlay" aria-hidden="true">
+      <span class="gallery__cat">{{ category_label }}</span>
+      <span class="gallery__caption">{{ caption }}</span>
+      <svg class="icon gallery__zoom"><use href="#i-zoom"/></svg>
+    </span>
+    <span class="visually-hidden">Open image: {{ caption }} ({{ category_label }})</span>
+  </a>
+</li>

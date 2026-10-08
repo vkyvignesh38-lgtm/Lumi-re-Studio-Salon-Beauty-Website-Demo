@@ -1,0 +1,35 @@
+{
+  "filters": [
+    { "id": "all", "label": "All" },
+    { "id": "hair", "label": "Hair" },
+    { "id": "grooming", "label": "Grooming" },
+    { "id": "makeup", "label": "Makeup" },
+    { "id": "bridal", "label": "Bridal" },
+    { "id": "spa", "label": "Spa" },
+    { "id": "studio", "label": "Studio" }
+  ],
+  "items": [
+    { "image": "g-hair-blowdry", "category": "hair", "caption": "Blow-dry & finish" },
+    { "image": "g-groom-beard", "category": "grooming", "caption": "Beard shaping" },
+    { "image": "g-studio-chairs", "category": "studio", "caption": "Styling floor" },
+    { "image": "g-bridal-saree", "category": "bridal", "caption": "Bridal look" },
+    { "image": "g-spa-overhead", "category": "spa", "caption": "Head & face massage" },
+    { "image": "g-hair-textured", "category": "hair", "caption": "Textured men's cut" },
+    { "image": "g-makeup-lips", "category": "makeup", "caption": "Lip detail" },
+    { "image": "g-spa-nails", "category": "spa", "caption": "Soft-tone manicure" },
+    { "image": "g-groom-clipper", "category": "grooming", "caption": "Clipper work" },
+    { "image": "g-studio-barber", "category": "studio", "caption": "Grooming lounge" },
+    { "image": "g-hair-waves", "category": "hair", "caption": "Soft waves" },
+    { "image": "g-bridal-ceremony", "category": "bridal", "caption": "Wedding day" },
+    { "image": "g-spa-facial", "category": "spa", "caption": "Hydrating facial" },
+    { "image": "g-makeup-brushes", "category": "makeup", "caption": "Artist's kit" },
+    { "image": "g-groom-fade", "category": "grooming", "caption": "Fade & beard line-up" },
+    { "image": "g-studio-tools", "category": "studio", "caption": "Workstation" },
+    { "image": "g-hair-curls", "category": "hair", "caption": "Curl styling" },
+    { "image": "g-bridal-traditional", "category": "bridal", "caption": "Traditional styling" },
+    { "image": "g-spa-essentials", "category": "spa", "caption": "Spa essentials" },
+    { "image": "g-makeup-palette", "category": "makeup", "caption": "Colour palette" },
+    { "image": "g-spa-nails-dark", "category": "spa", "caption": "Nail art" },
+    { "image": "g-studio-lounge", "category": "studio", "caption": "Sunlit studio" }
+  ]
+}

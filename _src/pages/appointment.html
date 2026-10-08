@@ -1,0 +1,121 @@
+    <header class="page-hero">
+      <div class="container page-hero__inner">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Appointment</li></ol>
+        <p class="eyebrow">Appointment</p>
+        <h1>Book Your Appointment</h1>
+        <p class="lead">Tell us what you need and we'll help you choose the right service.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-label="Appointment request">
+      <div class="container booking-layout">
+        <div class="form-card">
+          <form class="booking-form" data-appointment novalidate aria-describedby="form-intro">
+            <p class="demo-note" id="form-intro" role="note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span><strong>Demo booking form.</strong> Your details stay in your browser — nothing is sent, stored or scheduled. Fields marked <span class="req" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</span></p>
+
+            <div class="error-summary" data-error-summary tabindex="-1" role="alert" hidden>
+              <h2>There is a problem with your request</h2>
+              <ul></ul>
+            </div>
+
+            <div class="form-grid mt-md">
+              <div class="field">
+                <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="name" name="name" type="text" autocomplete="name" required maxlength="60" aria-describedby="name-error" placeholder="Your full name">
+                <p class="field__error" id="name-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="16" aria-describedby="phone-hint phone-error" placeholder="98765 43210">
+                <p class="field__hint" id="phone-hint">10-digit mobile number; +91 is optional.</p>
+                <p class="field__error" id="phone-error"></p>
+              </div>
+
+              <div class="field field--full">
+                <label for="email">Email <span class="muted">(optional)</span></label>
+                <input class="input" id="email" name="email" type="email" autocomplete="email" maxlength="80" aria-describedby="email-error" placeholder="name@example.com">
+                <p class="field__error" id="email-error"></p>
+              </div>
+
+              <fieldset class="field field--full">
+                <legend>Customer type <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(required)</span></legend>
+                <div class="choice-group" data-customer-type role="radiogroup" aria-describedby="customerType-error">
+                  <label class="choice"><input type="radio" name="customerType" id="type-women" value="women" required><span>Women</span></label>
+                  <label class="choice"><input type="radio" name="customerType" id="type-men" value="men"><span>Men</span></label>
+                  <label class="choice"><input type="radio" name="customerType" id="type-unisex" value="unisex"><span>Unisex</span></label>
+                </div>
+                <p class="field__error" id="customerType-error"></p>
+              </fieldset>
+
+              <div class="field field--full">
+                <label for="service">Service <span class="req" aria-hidden="true">*</span></label>
+                <select class="input" id="service" name="service" required aria-describedby="service-hint service-error">
+                  {{ service_options }}
+                </select>
+                <p class="field__hint" id="service-hint" aria-live="polite">Services are filtered by customer type.</p>
+                <p class="field__error" id="service-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="date">Preferred date <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="date" name="date" type="date" required aria-describedby="date-error">
+                <p class="field__error" id="date-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="time">Preferred time <span class="req" aria-hidden="true">*</span></label>
+                <select class="input" id="time" name="time" required aria-describedby="time-hint time-error">
+                  <option value="">Choose a date first</option>
+                </select>
+                <p class="field__hint" id="time-hint">Mon–Sat 10 AM–8 PM · Sun 10 AM–6 PM</p>
+                <p class="field__error" id="time-error"></p>
+              </div>
+
+              <div class="field field--full">
+                <label for="message">Message <span class="muted">(optional)</span></label>
+                <textarea class="input" id="message" name="message" rows="4" maxlength="500" placeholder="Anything we should know? e.g. hair length, skin sensitivities, event date."></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn--primary" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Request Appointment</button>
+              <p>Demo only — no real appointment will be scheduled.</p>
+            </div>
+          </form>
+
+          <section class="success" data-success hidden aria-labelledby="success-title">
+            <span class="success__icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+            <h2 id="success-title" tabindex="-1">Appointment request received.</h2>
+            <p class="success__demo" role="note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>Demo booking only — no real appointment has been scheduled.</span></p>
+            <p class="muted">Here's a summary of your request. In a live version, the studio would confirm by phone or WhatsApp. You can also send these details yourself:</p>
+            <dl class="summary" data-summary></dl>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="https://wa.me/" target="_blank" rel="noopener" data-whatsapp><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Book via WhatsApp<span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a class="btn btn--outline" href="mailto:{{ email }}" data-email data-to="{{ email }}"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Send via Email</a>
+            </div>
+            <p class="field__hint">WhatsApp opens with a pre-filled message and lets you choose the recipient — the demo has no real studio number.</p>
+            <div><button class="btn btn--sm btn--outline" type="button" data-book-again>Make another request</button></div>
+          </section>
+        </div>
+
+        <div class="info-stack">
+          <div class="info-card">
+            <div class="info-card__media">{{ appointment_image }}</div>
+            <h2>Opening hours</h2>
+            {{ hours }}
+          </div>
+          <div class="info-card">
+            <h2>What happens next?</h2>
+            <ul class="check-list check-list--dark">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>We'd review your request and suggest the right specialist.</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>You'd receive a confirmation call or WhatsApp message.</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Arrive five minutes early and relax.</span></li>
+            </ul>
+            <p><em>Illustrative flow for this demo.</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="application/json" id="services-data">{{ services_json }}</script>
